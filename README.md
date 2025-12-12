@@ -185,10 +185,6 @@ This OS was built by learning from:
   - GitHub repo with incremental lessons
   - Great for beginners
   
-- **Bran's Kernel Development Tutorial** (http://www.osdever.net/bran/)
-  - Older but still relevant
-  - Good for understanding basics
-
 ## Project Structure
 
 ```
