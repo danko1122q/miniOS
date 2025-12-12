@@ -15,9 +15,12 @@ This is a basic operating system that boots from scratch and runs a simple shell
 - Simple shell with Unix-like commands
 - Basic text editor (Ctrl+S to save, Ctrl+Q to quit)
 
----
-[➡️ Click here to view the demo (MP4)](docs/assets/demo.mp4)
----
+
+## Demo Preview
+
+![miniOS Demo](docs/assets/demo.gif)
+
+
 
 
 ## Building
