@@ -3,23 +3,22 @@
 *.bin
 *.elf
 *.img
+*.iso
 
-# Backup files
+# Backup / temporary files
 *~
 *.swp
 *.swo
+tmp/
 
 # Logs
 *.log
 
-# OS files
+# OS / system files
 .DS_Store
 Thumbs.db
 
-# IDE / Editor files
+# IDE / Editor
 .vscode/
 .idea/
 *.iml
-
-# Temporary files
-tmp/
