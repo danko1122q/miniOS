@@ -229,16 +229,16 @@ This is intentionally simple. The goal is to understand OS fundamentals without 
 
 Adding these would make the codebase 100x larger and harder to learn from.
 
-## Next Steps
+## Next Features
 
-Want to extend this? Try:
-1. Add more commands (cp, mv, find)
-2. Implement a better memory allocator
-3. Add multitasking with timer interrupts
-4. Write a FAT12/FAT16 driver for real disk I/O
-5. Add syscalls and user mode
-6. Port to x86-64
-7. Add graphics mode (VGA, VESA)
+Some things you could try adding to MiniOS:
+
+1. More CLI commands (like `cp`, `mv`, `find`)
+2. A better way to manage memory
+3. Simple multitasking
+4. A slightly better filesystem
+
+
 
 ## Contributing
 
