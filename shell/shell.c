@@ -27,7 +27,7 @@ static void show_welcome(void)
 	vga_puts("     Welcome to MiniOS v1.1     \n");
 	vga_puts("================================\n\n");
 	vga_set_color(VGA_COLOR_LIGHT_GREY, VGA_COLOR_BLACK);
-	vga_puts("Type 'help' for available commands\n\n");
+	vga_puts("Type 'help'\n\n");
 }
 
 static void print_prompt(void)
