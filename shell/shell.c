@@ -24,7 +24,7 @@ static void show_welcome(void)
 {
 	vga_set_color(VGA_COLOR_LIGHT_CYAN, VGA_COLOR_BLACK);
 	vga_puts("================================\n");
-	vga_puts("     Welcome to MiniOS v1.0     \n");
+	vga_puts("     Welcome to MiniOS v1.1     \n");
 	vga_puts("================================\n\n");
 	vga_set_color(VGA_COLOR_LIGHT_GREY, VGA_COLOR_BLACK);
 	vga_puts("Type 'help' for available commands\n\n");
@@ -422,7 +422,7 @@ static void cmd_info(void)
     vga_puts("\n=== MiniOS System Information ===\n\n");
     vga_set_color(VGA_COLOR_LIGHT_GREY, VGA_COLOR_BLACK);
     vga_puts("OS Name:      MiniOS\n");
-    vga_puts("Version:      1.0\n");
+    vga_puts("Version:      1.1\n");
     vga_puts("Architecture: x86 (32-bit)\n");
     vga_puts("Memory:       64 MB\n");
     vga_puts("Filesystem:   In-memory\n");
