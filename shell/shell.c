@@ -302,7 +302,6 @@ static void cmd_write(const char *name)
 	char buffer[MAX_FILE_SIZE];
 	int pos = 0;
 
-	// Load existing content if any
 	if (file->size > 0) {
 		for (uint32_t i = 0; i < file->size && i < MAX_FILE_SIZE - 1;
 		     i++) {
@@ -314,8 +313,7 @@ static void cmd_write(const char *name)
 	while (pos < MAX_FILE_SIZE - 1) {
 		char c = keyboard_getchar();
 
-		// Ctrl+S - Save
-		if (c == 19) { // Ctrl+S
+		if (c == 19) {
 			buffer[pos] = '\0';
 			fs_write_file(file, buffer, pos);
 			vga_putch('\n');
@@ -327,8 +325,7 @@ static void cmd_write(const char *name)
 			return;
 		}
 
-		// Ctrl+Q - Quit without saving
-		if (c == 17) { // Ctrl+Q
+		if (c == 17) {
 			vga_putch('\n');
 			vga_set_color(VGA_COLOR_LIGHT_RED, VGA_COLOR_BLACK);
 			vga_puts("\n[Quit without saving]\n\n");
@@ -512,14 +509,17 @@ static void parse_and_execute(const char *cmd)
 
 void shell_init(void)
 {
-	show_welcome();
+    show_welcome();
 }
 
 void shell_run(void)
 {
-	while (1) {
-		print_prompt();
-		keyboard_readline(cmd_buffer, CMD_BUFFER_SIZE);
-		parse_and_execute(cmd_buffer);
-	}
+    // Ensure we start on a fresh line after welcome message
+    vga_putch('\n');
+    
+    while (1) {
+        print_prompt();
+        keyboard_readline(cmd_buffer, CMD_BUFFER_SIZE);
+        parse_and_execute(cmd_buffer);
+    }
 }
