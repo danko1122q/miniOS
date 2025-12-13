@@ -287,7 +287,7 @@ static void cmd_write(const char *name)
 	}
 
 	vga_set_color(VGA_COLOR_LIGHT_CYAN, VGA_COLOR_BLACK);
-	vga_puts("\n======== WR- Editor ========\n");
+	vga_puts("\n======== WR - Editor ========\n");
 	vga_puts("File: ");
 	vga_set_color(VGA_COLOR_YELLOW, VGA_COLOR_BLACK);
 	vga_puts(name);
