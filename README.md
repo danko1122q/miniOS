@@ -197,21 +197,43 @@ This OS was built by learning from:
 
 ```
 .
-├── boot.asm              # Bootloader (16/32-bit assembly)
-├── kernel_entry.asm      # Kernel entry point (32-bit assembly)
-├── kernel.c              # Kernel main function
-├── link.ld               # Linker script
-├── Makefile              # Build system
-├── drivers/
-│   ├── vga.c/h          # VGA text mode driver
-│   └── keyboard.c/h     # PS/2 keyboard driver
-├── fs/
-│   └── fs.c/h           # In-memory filesystem
-├── shell/
-│   └── shell.c/h        # Command shell
-└── lib/
-    ├── string.c/h       # String functions (strlen, strcmp, etc.)
-    └── stdint.h         # Standard integer types
+├── boot.asm
+├── docs
+│   ├── assets
+│   │   ├── demo.gif
+│   │   └── demo.mp4
+│   └── changelog
+├── drivers
+│   ├── keyboard.c
+│   ├── keyboard.h
+│   ├── vga.c
+│   └── vga.h
+├── fs
+│   ├── fs.c
+│   └── fs.h
+├── iso
+│   ├── boot
+│   │   └── grub
+│   │       └── grub.cfg
+│   └── EFI
+│       └── boot
+├── kernel.c
+├── kernel_entry.asm
+├── lib
+│   ├── stdint.h
+│   ├── string.c
+│   └── string.h
+├── LICENSE
+├── link.ld
+├── Makefile
+├── README.md
+├── shell
+│   ├── shell.c
+│   └── shell.h
+└── src
+
+12 directories, 22 files
+
 ```
 
 ## Limitations
