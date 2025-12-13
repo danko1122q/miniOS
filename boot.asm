@@ -135,7 +135,7 @@ DATA_SEG equ gdt_data - gdt_start
 ; ---------------------------------------------------------
 ; Messages
 ; ---------------------------------------------------------
-msg_loading db "Loading TinyOS kernel...", 13, 10, 0
+msg_loading db "Loading MiniOS kernel...", 13, 10, 0
 msg_protected db "Entering protected mode...", 13, 10, 0
 msg_error db "Disk read error!", 13, 10, 0
 
